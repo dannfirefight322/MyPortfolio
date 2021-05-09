@@ -1,0 +1,139 @@
+/*these are variables i used for styling */
+:root{
+  --Grey: #393e46;
+  --PaleBlue: #aad8d3;
+  --Teal: #00adb5;
+  --font: serif;
+}
+/*this is the main color of the page */
+body{
+  background-color: var(--Grey);
+}
+/*this is how i styled my links */
+a{
+ border-radius:10%;
+  text-decoration:none;
+  color: var(--PaleBlue);
+  padding:15px;
+  font-size:30px;
+  cursor: grab;
+}
+a:hover{
+  opacity:0.5;
+}
+a:active{
+ box-shadow: 3px 3px 5px 6px;
+  cursor: grabbing;
+  opacity: 2;
+}
+/*styled my header */
+.head{
+  font-family: var(--font) ;
+  color:var(--PaleBlue);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left:50px;
+}
+.links{
+  font-family: var(--font);
+ text-align:right;
+  padding-right:60px;
+background-color:black;  
+}
+/*style for first set of links to navigate the page*/
+.links1{
+  font-family: var(--font);
+ text-align:right;
+  padding-right:60px;
+background-color:black;  
+}
+.link{
+display:inline-block;
+}
+/*width and height of the stock image */
+.placeholder{
+height:200px;
+ width: 100%;
+}
+/*I attempted to try and use flex proporties i figured out how to use them to late and i was starting over but didnt have time to finish*/
+.table{
+  display: flex;
+  width: 100%;
+  position: relative;
+
+ 
+  
+  flex-wrap:wrap;
+}
+/*this is used to style about me and work on left side of screen */
+.name{
+  color: #aad8d3;
+  font-size:40px;
+  height:200px;
+  width:400px;
+  text-align:right;
+  padding-right:10px;
+  }
+/*this was used to style the paragraph about me */
+.subject{
+  font-size:17px;
+  color: var(--Grey);
+  background-color:var(--Teal);
+  text-align: center;
+  width:1055px;
+  opacity:0.7;
+  border-radius:2%;
+}
+/*this was used to style the image for the big work image in the middle of the column */
+.experiences{
+ margin-left:auto;
+  margin-right:auto;
+  height:300px;
+  width:565px;
+  border-radius:10px;
+
+}
+/*this was used to style the smaller images in the work area */
+.experience1{
+margin-left:auto;
+  margin-right:auto;
+ border:solid;
+  height:250px;
+  width:250px;
+  border-radius:10px;
+}
+/*this styled the contact me area */
+.foot{
+  position:relative;
+  padding-left:210px;
+  font-size:30px;
+  background-color:black;
+}
+/*this is for the contact links to various sites to reach me */
+.link1{
+  padding-right:50px;
+  padding-left:50px;
+  position: relative;
+  top:-60px;
+display: inline-block;
+}
+/*my failed attempt to try and use flex to resize for moblie phone screen */
+@media screen and (max-width: 768px){
+.links{display:flex;
+flex-direction:column;
+width:600px;
+}
+.placeholder{
+
+}
+.subject{
+width:95%;
+}
+.foot{
+text-align:left;
+width:500px;
+}
+.link1{
+margin:none;
+width:250px;
+}
